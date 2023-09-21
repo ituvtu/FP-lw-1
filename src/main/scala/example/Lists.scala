@@ -56,8 +56,7 @@ object Lists:
           currentMax = x
         }
       }
-
-      // Після ітерації повертаємо знайдений максимум
+      // Після ітерації повертає знайдений максимум
       currentMax
     }*/
   if(xs.isEmpty) throw new NoSuchElementException("Список порожній") 
