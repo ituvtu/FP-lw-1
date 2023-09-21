@@ -43,7 +43,7 @@ object Lists:
   def max(xs: List[Int]): Int = {
   /**if (xs.isEmpty) {
       // Якщо список порожній, повертаємо помилку або значення за замовчуванням, наприклад, 0
-      throw new IllegalArgumentException("Список порожній")
+      throw new NoSuchElementException("Список порожній")
       // Або можна повернути значення за замовчуванням, наприклад:
       // 0
     } 

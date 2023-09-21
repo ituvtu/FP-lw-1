@@ -86,7 +86,6 @@ class ListsSuite extends munit.FunSuite:
    */
   import Lists.*
 
-
   /**
    * We only provide two very basic tests for you. Write more tests to make
    * sure your `sum` and `max` methods work as expected.
@@ -105,7 +104,14 @@ class ListsSuite extends munit.FunSuite:
   test("max of a few numbers (10pts)") {
     assert(max(List(3, 7, 2)) == 7)
   }
-
+  test(name="max of a list with 1 element"){
+    assert(max(List(49))==49)
+  }
+  test(name="max of an empty list should throw NoSuchElementException") {
+    intercept[NoSuchElementException] {
+      max(List())
+    }
+  }
 
 
   import scala.concurrent.duration.*
